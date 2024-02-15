@@ -23,7 +23,8 @@ body {
 }
 
 .container {
-  width: 600px;
+  width: 100%;
+  height: 600px;
   background-color: #242424;
 }
 
@@ -94,10 +95,31 @@ button:focus-visible {
   border: 2px solid #535353;
 }
 
+.input-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+}
+
 .neon-button {
   position: relative;
   display: inline-block;
   padding: 6px 20px;
+  margin-right: 25px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -129,7 +151,7 @@ button:focus-visible {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 8px; /* Adicione um espaço entre as mensagens */
+  margin-bottom: 8px;
 }
 
 .message-text {
@@ -144,4 +166,8 @@ button:focus-visible {
 .botIcon {
   width: 20px; /* Defina o tamanho desejado para os ícones */
   height: 20px;
+}
+
+.messages{
+  height: 100%;
 }
