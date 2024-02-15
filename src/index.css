@@ -13,6 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+.container {
+  width: 600px;
+  background-color: #242424;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -20,14 +34,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -65,4 +71,77 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.modelChat {
+  text-align: left;
+}
+
+.userChat {
+  text-align: right;
+}
+
+.userChat,
+.modelChat {
+  padding: 8px; /* Adicione um preenchimento para melhorar a aparência */
+  margin-bottom: 8px; /* Adicione um espaço entre as mensagens */
+  display: flex;
+  align-items: center;
+  margin-right: 8px; 
+}
+
+.message{
+  border: 2px solid #535353;
+}
+
+.neon-button {
+  position: relative;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #1a1a1a;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.neon-button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #1a1a1a 0%, transparent 80%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  background-color: #213547;
+}
+
+.message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px; /* Adicione um espaço entre as mensagens */
+}
+
+.message-text {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Garante que a altura da div seja 100% para a centralização vertical */
+  padding-left: 20px;
+}
+
+
+.userIcon,
+.botIcon {
+  width: 20px; /* Defina o tamanho desejado para os ícones */
+  height: 20px;
 }
