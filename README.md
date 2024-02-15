@@ -1,6 +1,7 @@
 # Requisitos
 ```
 Node >= 18.0.0
+API_KEY = https://makersuite.google.com/app/apikey
 ```
 
 # Utilização:
