@@ -28,8 +28,23 @@ O Gemini AI é um serviço em nuvem, o que significa que a Google se encarrega d
 
 O Gemini AI foi projetado para ser fácil de usar, mesmo para pessoas sem experiência com tecnologia.
 
-Consumo de Processamento:
-Não encontrei informações sobre o consumo de processamento, porém é notável diferença de tempo para geração de respostas entre o ChatGPT e o Gemini AI. Perguntas simples a API do Gemini demorou mais de 2 segundos para retornar. Em momentos confunde até com instabilidade
+# Consumo de Processamento:
+O consumo de processamento pode ser afetado por diversos fatores:
+
+1. Complexidade da Conversa:
+
+Conversas simples com perguntas e respostas diretas consomem menos recursos.
+Conversas complexas com raciocínio, geração de conteúdo e tradução consomem mais recursos.
+
+2. Número de Usuários
+
+3. Tipo de Tarefa:
+
+Tarefas simples como responder perguntas consomem menos recursos.
+
+4. Configurações de Otimização:
+
+Otimizações como cache e balanceamento de carga podem reduzir o consumo de processamento.
 
 # Observações:
 
